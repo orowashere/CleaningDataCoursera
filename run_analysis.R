@@ -16,7 +16,6 @@
 # libs --- 
 
 library(dplyr)
-library(memisc)
 
 # Merge Train and Test ----
 
@@ -77,3 +76,5 @@ tidy$subject <- as.numeric(c(
 summary_df <- select(tidy, -Type) %>% 
   group_by(activities, subject) %>% 
   summarise_all(.funs = function(x) mean(x))
+
+# write.table(summary_df,"tidy_data.txt", row.names = FALSE)

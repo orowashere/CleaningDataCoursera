@@ -4,6 +4,10 @@
 
 This repository contains code and documents for the course project for Getting and Cleaning Data by John Hopkins University offered through Coursera. 
 
+## Cleaning
+
+Data was received in an extremely clean format and very limited fixes were required.
+
 ## Notes
 
 The code included, `run_analysis.R` assumes you extracted the data from the assignment site and is in the same directory. It creates a tidy data set based by: 
